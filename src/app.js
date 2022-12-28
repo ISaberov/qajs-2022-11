@@ -1,9 +1,9 @@
 /**
- * Проверка имени пользователя
+ /* Проверка имени пользователя
  * @param {string} name
  * @returns {boolean}
  */
-
+/*
 export const nameIsValid = (name) => !!name && name.length >= 2 && !name.includes(' ');
 
 /**
@@ -39,3 +39,31 @@ export const getTotal = (items = [], discount = 0) => {
     }, 0)
     return total - total * discount / 100;
 }
+
+console.log("Result : " + getTotal([{ price: 10, quantity: 10 }]))
+
+
+
+//ДЗ
+const scores = {
+	Anna: 10,
+	Olga: 1,
+	Ivan: 5
+}
+  let getScore = 0;
+  for (let key in scores) {
+    getScore += scores[key];
+  }
+  
+  console.log(getScore); 
+/*
+Object.values(scores);
+//const scoresInfo = getScore(scores);
+//console.log(scores)
+
+const getScore = scores.reduce((res, value) => {
+	res = res + value;
+    return res;
+})
+console.log(getScore)
+*/
